@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# Set switch to workspace
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control>1']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Control>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Control>4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Control>5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Control>7']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-7 "['<Control>8']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "['<Control>9']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "['<Control>0']" 
+
+# Set move application to workspace
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-1 "['<Control><Shift>1']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-2 "['<Control><Shift>2']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-3 "['<Control><Shift>3']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-4 "['<Control><Shift>4']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-5 "['<Control><Shift>5']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-6 "['<Control><Shift>7']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-7 "['<Control><Shift>8']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Control><Shift>9']"
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Control><Shift>0']"
+
+
+# lv3:lalt_switch: Maps the left Alt key as the switch for layer 3.
+# lv3:ralt_alt: Keeps the right Alt key as a regular Alt modifier.
+# caps:escape: Changes the Caps Lock key to an Escape key.
+gsettings set org.gnome.desktop.input-sources xkb-options "['lv3:lalt_switch', 'lv3:ralt_alt', 'caps:escape']"
+
+# Set maximize and minimize
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Control>m']"
+gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Shift><Control>m']"
+
+# Set toggle overview
+gsettings set org.gnome.shell.keybindings toggle-overview "['<Control>space']"
+
+

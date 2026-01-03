@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+./set-settings
+./set-keyboard-layout
+./set-keybinds
