@@ -2,4 +2,4 @@
 
 cp /usr/share/X11/xkb/symbols/fi /usr/share/X11/xkb/symbols/fi.bak
 cp ./fi_custom /usr/share/X11/xkb/symbols/fi
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'fi')]"
+echo "Keyboard files copied successfully"

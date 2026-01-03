@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Set layout to fi
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'fi')]"
+
 # Set switch to workspace
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Control>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Control>2']"
@@ -35,4 +38,4 @@ gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Shift><Control>m']
 # Set toggle overview
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Control>space']"
 
-
+echo "Keybinds updated successfully."

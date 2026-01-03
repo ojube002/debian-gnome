@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-./set-settings
+chmod +x set-keyboard-layout set-settings set-keybinds
+
 ./set-keyboard-layout
-./set-keybinds
+su -c "./set-settings" $USER
+su -c "./set-keybinds" $USER
