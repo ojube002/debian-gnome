@@ -8,4 +8,4 @@ gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.7
 gsettings set org.gnome.desktop.interface enable-animations false
-
+gsettings set org.gnome.desktop.search-providers disable-external true
