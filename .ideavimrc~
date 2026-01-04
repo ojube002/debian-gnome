@@ -1,7 +1,3 @@
-let g:mapleader = "\<SPACE>"
-nnoremap <Space> <Nop>
-nnoremap <Leader>w :w<CR>
-
 set hlsearch
 set showmode
 set history 500
@@ -10,6 +6,7 @@ set showcmd
 set scrolloff=5
 
 map <leader>r  <Action>(ReformatCode)
+" testiä
 
 " have x (removes single character) not go into the default registry
 nnoremap x "_x
