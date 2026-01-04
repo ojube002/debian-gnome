@@ -9,7 +9,16 @@ set incsearch
 set showcmd
 set scrolloff=5
 
+"" Reformat code
 map <leader>r  <Action>(ReformatCode)
+
+" Shortcut for copying to/from System Clipboard
+"" Copy (Yank)
+vmap <Leader>y "+y
+"" Cute
+vmap <Leader>d "+d
+"" Paste
+nmap <Leader>P "+p
 
 " have x (removes single character) not go into the default registry
 nnoremap x "_x
