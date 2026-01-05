@@ -4,13 +4,22 @@ nnoremap <Leader>w :w<CR>
 
 set hlsearch
 set showmode
-set history 500
+set history 100
 set incsearch
 set showcmd
 set scrolloff=5
 
 "" Reformat code
-map <leader>r  <Action>(ReformatCode)
+:map <leader>r  <Action>(ReformatCode)
+:map <leader>E <Action>(QuickJavaDoc)
+:map <leader>o <Action>(ShowErrorDescription)
+:map <leader>h <Action>(QuickImplementations)
+:map <leader>e <Action>(ShowHoverInfo)
+:map <leader>O <Action>(ShowIntentionActions)
+
+:map <leader>1 <Action>(Run)
+:map <leader>2 <Action>(Debug)
+:map <leader>7 <Action>(Stop)
 
 " Shortcut for copying to/from System Clipboard
 "" Copy (Yank)
@@ -22,9 +31,6 @@ nmap <Leader>P "+p
 
 " have x (removes single character) not go into the default registry
 nnoremap x "_x
-
-" Don't use Ex mode, use Q for formatting.
-map Q gq
 
 " Highlight copied text
 Plug 'machakann/vim-highlightedyank'
