@@ -37,13 +37,17 @@ if v:progname =~? "evim"
   finish
 endif
 
+" VMS
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file (restore to previous version)
-  if has('persistent_undo')
-    set undofile	" keep an undo file (undo changes after closing)
+  if !isdirectory(getenv('HOME') . '/.vim/backup')
+    call mkdir(getenv('HOME') . '/.vim/backup', 'p', 0700)
   endif
+  set backupdir=~/.vim/backup//
+  set backup
+  set backupext=.backup
+  set nowritebackup	" don't keep .file.txt~ write backup
 endif
 
 if &t_Co > 2 || has("gui_running")
