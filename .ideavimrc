@@ -10,13 +10,15 @@ set incsearch
 set showcmd
 set scrolloff=7
 
-"" Reformat code
 :map <leader>r  <Action>(ReformatCode)
-:map <leader>E <Action>(QuickJavaDoc)
-:map <leader>o <Action>(ShowErrorDescription)
-:map <leader>h <Action>(QuickImplementations)
+
 :map <leader>e <Action>(ShowHoverInfo)
+:map <leader>E <Action>(QuickJavaDoc)
+
+:map <leader>o <Action>(ShowErrorDescription)
 :map <leader>O <Action>(ShowIntentionActions)
+
+:map <leader>h <Action>(QuickImplementations)
 :map gh <Action>(GotoDeclaration)
 
 "" Map Run, Debug and Terminal
