@@ -1,3 +1,4 @@
+"" Map leader to Spacebar
 let g:mapleader = "\<SPACE>"
 nnoremap <Space> <Nop>
 nnoremap <Leader>w :w<CR>
@@ -25,6 +26,13 @@ set scrolloff=7
 :map <leader>7 <Action>(Stop)
 :map <leader>' <Action>(ActivateTerminalToolWindow)<CR>
 
+"" Edit ideavim config
+nnoremap <leader>vv :e ~/.ideavimrc<CR>
+nnoremap <leader>vr :source ~/.ideavimrc<CR>
+
+"" Close tab
+nnoremap <C-w> :tabclose<CR>
+
 "" Distraction Free Mode
 :map <leader>z :action ToggleDistractionFreeMode<CR>
 
@@ -46,5 +54,3 @@ Plug 'tpope/vim-commentary'
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
-
-inoremap <C-s> <Esc>
