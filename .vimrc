@@ -13,7 +13,7 @@ set showcmd		" display incomplete commands
 set ttimeout		" time out for key codes
 set ttimeoutlen=100	" wait up to 100ms after Esc for special key
 set display=truncate	" Show @@@ in the last line if it is truncated.
-set scrolloff=5		" Show a few lines of context around the cursor. 
+set scrolloff=7		" Show a few lines of context around the cursor. 
 set hlsearch
 set showmode
 set history=500

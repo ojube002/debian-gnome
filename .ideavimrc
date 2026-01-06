@@ -7,7 +7,7 @@ set showmode
 set history 100
 set incsearch
 set showcmd
-set scrolloff=5
+set scrolloff=7
 
 "" Reformat code
 :map <leader>r  <Action>(ReformatCode)
@@ -17,11 +17,18 @@ set scrolloff=5
 :map <leader>e <Action>(ShowHoverInfo)
 :map <leader>O <Action>(ShowIntentionActions)
 
+"" Map Run, Debug and Terminal
 :map <leader>1 <Action>(Run)
-:map <leader>2 <Action>(Debug)
+:map <leader>2 <Action>(ActivateRunToolWindow)<CR>
+:map <leader>3 <Action>(Debug)
+:map <leader>4 <Action>(ActivateDebugToolWindow)<CR>
 :map <leader>7 <Action>(Stop)
+:map <leader>' <Action>(ActivateTerminalToolWindow)<CR>
 
-" Shortcut for copying to/from System Clipboard
+"" Distraction Free Mode
+:map <leader>z :action ToggleDistractionFreeMode<CR>
+
+"" Shortcut for copying to/from System Clipboard
 "" Copy (Yank)
 vmap <Leader>y "+y
 "" Cute
@@ -29,19 +36,13 @@ vmap <Leader>d "+d
 "" Paste
 nmap <Leader>P "+p
 
-" have x (removes single character) not go into the default registry
+"" Have x (removes single character) not go into the default registry
 nnoremap x "_x
 
-" Highlight copied text
+"" Highlight copied text
 Plug 'machakann/vim-highlightedyank'
-" Commentary plugin
+"" Commentary plugin
 Plug 'tpope/vim-commentary'
-
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
 
 "" Map \b to toggle the breakpoint on the current line
 "map \b <Action>(ToggleLineBreakpoint)
