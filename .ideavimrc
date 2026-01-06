@@ -17,14 +17,19 @@ set scrolloff=7
 :map <leader>h <Action>(QuickImplementations)
 :map <leader>e <Action>(ShowHoverInfo)
 :map <leader>O <Action>(ShowIntentionActions)
+:map gh <Action>(GotoDeclaration)
 
 "" Map Run, Debug and Terminal
 :map <leader>1 <Action>(Run)
-:map <leader>2 <Action>(ActivateRunToolWindow)<CR>
+:map <leader>2 <Action>(ActivateRunToolWindow)
 :map <leader>3 <Action>(Debug)
-:map <leader>4 <Action>(ActivateDebugToolWindow)<CR>
+:map <leader>4 <Action>(ActivateDebugToolWindow)
 :map <leader>7 <Action>(Stop)
-:map <leader>' <Action>(ActivateTerminalToolWindow)<CR>
+:map <leader>' <Action>(ActivateTerminalToolWindow)
+
+"" Easy window navigation
+:map <Tab> <Action>(NextTab)
+:map <S-Tab> <Action>(PreviousTab)
 
 "" Edit ideavim config
 nnoremap <leader>vv :e ~/.ideavimrc<CR>
