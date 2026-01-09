@@ -2,4 +2,9 @@
 
 cp /usr/share/X11/xkb/symbols/fi /usr/share/X11/xkb/symbols/fi.bak
 cp ./fi_custom /usr/share/X11/xkb/symbols/fi
+localectl set-x11-keymap fi
+
+# Tarkista, että layout vaihto on onnistunut
+localectl status
+
 echo "Keyboard files copied successfully"

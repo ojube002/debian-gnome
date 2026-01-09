@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Tarkista, että skripti ajetaan sudo:lla
+if [ "$EUID" -ne 0 ]; then
+    echo "Tämä skripti on suoritettava sudo:lla." >&2
+    exit 1
+fi
+
+
 chmod +x set-keyboard-layout set-settings set-keybinds
 
 ./set-keyboard-layout
