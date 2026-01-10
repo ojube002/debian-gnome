@@ -10,4 +10,9 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.7
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.search-providers disable-external true
 
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark 
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
+gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/rocky-default-10-abstract-1-night.png'
+
 echo "Settings updated successfully."
