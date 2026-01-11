@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Tarkista, että skripti ajetaan sudo:lla
+if [ "$EUID" -ne 0 ]; then
+    echo "Tämä skripti on suoritettava sudo:lla." >&2
+    exit 1
+fi
+
 cp /usr/share/X11/xkb/symbols/fi /usr/share/X11/xkb/symbols/fi.bak
 cp ./fi_custom /usr/share/X11/xkb/symbols/fi
 

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+ln -s $PWD/.vimrc ~/.vimrc
+echo "Created symlink from $PWD/.vimrc to $HOME/.vimrc"
+ln -s $PWD/.ideavimrc ~/.ideavimrc
+echo "Created symlink from $PWD/.ideavimrc to $HOME/.ideavimrc"
