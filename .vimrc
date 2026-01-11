@@ -19,13 +19,18 @@ set showmode
 set history=500
 set incsearch
 
-" Shortcut for copying to/from System Clipboard
+"" Shortcut for copying to/from System Clipboard
 "" Copy (Yank)
 vmap <Leader>y "+y
 "" Cute
 vmap <Leader>d "+d
 "" Paste
 nmap <Leader>P "+p
+
+"" Add system clipboard to + register
+if has('unnamedplus')
+  set clipboard+=unnamedplus
+endif
 
 " have x (removes single character) not go into the default registry
 nnoremap x "_x
