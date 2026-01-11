@@ -10,6 +10,6 @@ run ./set-settings
 run sudo dnf install wl-clipboard
 
 ##### https://github.com/jasonccox/vim-wayland-clipboard
-mkdir -p ~/.vim/pack/vim-wayland-clipboard/start/
+mkdir -p ~/.vim/pack/vim-wayland-clipboard/start/ <br>
 git clone https://github.com/jasonccox/vim-wayland-clipboard.git ~/.vim/pack/vim-wayland-clipboard/start/vim-wayland-clipboard
 
