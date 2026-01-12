@@ -10,6 +10,9 @@ set incsearch
 set showcmd
 set scrolloff=7
 
+"" extensions
+set surround
+
 :map <leader>r  <Action>(ReformatCode)
 
 :map <leader>e <Action>(ShowHoverInfo)
@@ -32,6 +35,17 @@ set scrolloff=7
 "" Easy window navigation
 :map <Tab> <Action>(NextTab)
 :map <S-Tab> <Action>(PreviousTab)
+
+:map <leader>sw <Action>(SurroundWith)
+let g:WhichKeyDesc_surround_with = "<leader>sw Surround with"
+
+"" breakpoints (<leader>b)
+:map <leader>bb <Action>(ToggleLineBreakpoint)
+:map <leader>bw <Action>(ViewBreakpoints)
+:map <leader>ba <Action>(Debugger.RemoveAllBreakpoints)
+let g:WhichKeyDesc_toggle_line_breakpoint = "<leader>bb Toggle line breakpoint"
+let g:WhichKeyDesc_view_breakpoints = "<leader>bw View breakpoints"
+let g:WhichKeyDesc_remove_all_breakpoints = "<leader>ba Remove all breakpoints"
 
 "" Edit ideavim config
 nnoremap <leader>vv :e ~/.ideavimrc<CR>
